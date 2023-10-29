@@ -7,7 +7,7 @@
  * Import variables
  */
 
-@import "variables";
+@import "./variables";
 
 /**
  * Import npm dependencies
@@ -22,9 +22,13 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
-
-@import "layouts/home";
-
+@import "./base";
+@import "layout/home";
+@import "modules/header";
+@import "modules/intro";
+@import "modules/cita";
+@import "modules/galeria";
+@import "modules/footer";
 /**
  * Do NOT include anything else in this file!
  */

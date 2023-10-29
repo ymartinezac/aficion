@@ -1,0 +1,94 @@
+@import "./variables";
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  background: $background-white;
+  font-family: $font-default;
+  font-size: 16px;
+}
+
+header {
+  background-color: $light-green;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: $dark-green;
+  font-family: $font-headers;
+  font-size: 2.6rem;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: $color-text;
+  font-family: $font-headers;
+}
+
+h3,
+h4 {
+  margin: 0;
+  color: $color-text;
+  font-family: $font-default;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+summary {
+  list-style-type: "​🎨​";
+  margin: 5px;
+
+  &:hover {
+    cursor: pointer;
+    color: $light-green;
+  }
+}
+
+details p {
+  padding-left: 15px;
+}
+
+p {
+  color: $color-text;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+li {
+  color: $color-text;
+}
+
+a {
+  color: $dark-green;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $yellow;
+}
+
+span,
+time {
+  color: $color-text;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: $tabletMaxWidth) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $mobileMaxWidth) {
+  header {
+    height: 15vh;
+  }
+}

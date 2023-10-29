@@ -1,0 +1,16 @@
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-item {
+  flex-basis: 350px;
+}
+.grid-item img {
+  object-fit: cover;
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+}
