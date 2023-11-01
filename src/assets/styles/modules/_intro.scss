@@ -1,10 +1,14 @@
 .intro img {
   width: 150px;
   height: 150px;
-  border: 2px solid $dark-green;
+  border: 2px solid $orange;
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   border-radius: 500px;
+}
+
+.intro p {
+  text-align: justify;
 }
 
 .intro .container {

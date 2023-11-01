@@ -14,7 +14,6 @@
 
 body {
   display: grid;
-  row-gap: 20px;
   grid-template-areas:
     "header header"
     "intro detalles"
@@ -22,8 +21,8 @@ body {
     "galeria galeria"
     "footer footer";
   grid-template-columns: 2fr 1fr;
-  column-gap: 30px;
   row-gap: 50px;
+  column-gap: 30px;
 }
 
 section {

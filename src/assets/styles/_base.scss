@@ -4,9 +4,9 @@ html,
 body {
   width: 100%;
   margin: 0;
-  background: $background-white;
   font-family: $font-default;
   font-size: 16px;
+  background: $background-white;
 }
 
 header {
@@ -15,22 +15,22 @@ header {
 }
 
 h1 {
-  color: $dark-green;
   font-family: $font-headers;
   font-size: 2.6rem;
+  color: $dark-green;
 }
 
 h2 {
   margin-bottom: 10px;
-  color: $color-text;
   font-family: $font-headers;
+  color: $color-text;
 }
 
 h3,
 h4 {
   margin: 0;
-  color: $color-text;
   font-family: $font-default;
+  color: $color-text;
 }
 
 ul {
@@ -38,23 +38,28 @@ ul {
 }
 
 summary {
-  list-style-type: "​🎨​";
   margin: 5px;
+  list-style-type: none;
 
   &:hover {
-    cursor: pointer;
     color: $light-green;
+    cursor: pointer;
   }
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  color: $color-text;
 }
 
 details p {
   padding-left: 15px;
 }
 
-p {
-  color: $color-text;
-  font-size: 1em;
-  line-height: 1.4em;
+i {
+  margin: 5px;
+  color: $orange;
 }
 
 li {
