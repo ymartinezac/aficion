@@ -70,12 +70,12 @@ li {
 }
 
 a {
-  color: $dark-green;
+  color: $orange;
   text-decoration: none;
-}
 
-a:hover {
-  color: $yellow;
+  &:hover {
+    color: $yellow;
+  }
 }
 
 span,
