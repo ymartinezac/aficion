@@ -17,17 +17,19 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
+
 @import "./base";
 @import "layout/index";
 @import "modules/header";
 @import "modules/intro";
-@import "modules/cita";
-@import "modules/galeria";
+@import "modules/quote";
+@import "modules/gallery";
 @import "modules/footer";
 /**
  * Do NOT include anything else in this file!

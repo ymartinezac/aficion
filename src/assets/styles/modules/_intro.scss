@@ -1,4 +1,10 @@
-.intro img {
+@use "../variables";
+
+.intro {
+  margin-top: 10px;
+}
+
+.summary__profile-pic {
   width: 150px;
   height: 150px;
   border: 2px solid $orange;
@@ -7,16 +13,17 @@
   border-radius: 500px;
 }
 
-.intro p {
+.summary__text {
   text-align: justify;
 }
 
-.intro .container {
+.intro__container {
   display: flex;
   gap: 30px;
+  width: $containerDesktopWidth;
 }
 
-.intro h2 {
+.summary__title {
   margin: 0;
 }
 
@@ -31,31 +38,40 @@
   width: 33%;
 }
 
-.mediums h3 {
+.mediums__title {
   margin: 4px 0 14px 0;
 }
 
 @media (max-width: $tabletMaxWidth) {
+  .intro__container {
+    width: $containerTabletWidth;
+  }
+
   .mediums {
     display: none;
   }
+
   .summary {
     width: 100%;
   }
 }
 
 @media (max-width: $mobileMaxWidth) {
+  .intro__container {
+    width: $containerMobileWidth;
+  }
+
   .summary {
     flex-direction: column;
     align-items: center;
   }
 
-  .summary h2 {
+  .summary__title {
     width: 100%;
     text-align: center;
   }
 
-  .summary div {
+  .summary__col {
     width: 100%;
   }
 }

@@ -1,27 +1,19 @@
-@import "../variables";
+@use "../variables";
 
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header div {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: $containerDesktopWidth;
 }
 
-header h1 {
-  margin: 0;
-  font-family: costa, sans-serif;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 50px;
-}
-
-header p {
+.header__subtitle {
   margin: 0;
 }
 
@@ -29,11 +21,12 @@ header p {
   header {
     height: 50px;
   }
-  header div {
+
+  .header__container {
     width: 710px;
   }
 
-  header h1 {
+  .header__title {
     align-self: center;
     font-size: 20px;
     line-height: 35px;
@@ -46,7 +39,7 @@ header p {
     height: 80px;
   }
 
-  header div {
+  .header__container {
     flex-direction: column;
   }
 }

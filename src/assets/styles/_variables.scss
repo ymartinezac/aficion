@@ -13,6 +13,10 @@ $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
 
+$containerDesktopWidth: 1050px;
+$containerTabletWidth: 710px;
+$containerMobileWidth: 350px;
+
 $tabletMaxWidth: 1069px;
 $mobileMaxWidth: 708px;
 /*----------*/
@@ -25,3 +29,8 @@ $yellow: #fcce04;
 $color-text: #2f150e;
 $dark-blue: #224e4e;
 $orange: #cb654f;
+
+@mixin centralizeFlex() {
+  display: flex;
+  justify-content: center;
+}

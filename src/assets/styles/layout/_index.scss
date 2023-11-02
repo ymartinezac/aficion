@@ -13,16 +13,9 @@
 }
 
 body {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "intro detalles"
-    "cita cita"
-    "galeria galeria"
-    "footer footer";
-  grid-template-columns: 2fr 1fr;
-  row-gap: 50px;
-  column-gap: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 section {
@@ -30,41 +23,13 @@ section {
 }
 
 header {
-  grid-area: header;
   width: 100vw;
   height: 50px;
 }
 
-.intro {
-  grid-area: intro;
-}
-
-.detalles {
-  grid-area: detalles;
-}
-
-.cita {
-  grid-area: cita;
-}
-
-.galeria {
-  grid-area: galeria;
-}
-
-footer {
-  grid-area: footer;
+.footer {
   width: 100vw;
   height: 5vh;
-}
-
-.container {
-  width: 1050px;
-}
-
-@media (max-width: $tabletMaxWidth) {
-  .container {
-    width: 710px;
-  }
 }
 
 @media (max-width: $mobileMaxWidth) {
@@ -75,9 +40,5 @@ footer {
 
   header {
     height: 15vh;
-  }
-
-  .container {
-    width: 350px;
   }
 }

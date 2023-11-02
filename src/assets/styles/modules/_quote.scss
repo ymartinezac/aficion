@@ -1,0 +1,27 @@
+@use "../variables";
+
+.quote__text {
+  margin: 0;
+  font-style: italic;
+  text-align: center;
+}
+
+.quote__container {
+  @include centralizeFlex;
+  flex-direction: column;
+  align-items: center;
+  width: $containerDesktopWidth;
+  margin: 0;
+}
+
+@media (max-width: $tabletMaxWidth) {
+  .quote__container {
+    width: $containerTabletWidth;
+  }
+}
+
+@media (max-width: $mobileMaxWidth) {
+  .quote__container {
+    width: $containerMobileWidth;
+  }
+}
