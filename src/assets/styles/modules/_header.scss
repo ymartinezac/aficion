@@ -42,4 +42,12 @@
   .header__container {
     flex-direction: column;
   }
+
+  .header__title {
+    margin-bottom: 0;
+  }
+
+  .header__subtitle {
+    margin-bottom: 10px;
+  }
 }
